@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview</title>
+    <link rel="stylesheet" href="interview.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Interview in Progress</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="video-container" class="form-section">
+                <h2>Your Video Feed</h2>
+                <div id="videos">
+                    <div id="user-video-section">
+                        <video id="user-video" autoplay muted playsinline></video>
+                        <div class="video-controls">
+                            <button id="toggle-user-video" class="toggle-button">Turn Off Video</button>
+                            <button id="toggle-mute" class="toggle-button">Mute</button>
+                        </div>
+                    </div>
+                    <div id="ai-video-section">
+                        <img id="ai-image" src="interviewer.png" alt="AI Video">
+                    </div>
+                </div>
+            </section>
+
+            <section id="audio-container" class="form-section">
+                <h2>Microphone Access</h2>
+                <p>Your microphone is being accessed. Please speak into the microphone.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Interview System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="feedback-form">
+        <h2>Feedback Form</h2>
+        <form>
+            <label for="feedback">Please provide your feedback:</label><br>
+            <textarea id="feedback" rows="4" cols="50" required></textarea><br>
+            <button type="submit">Submit Feedback</button>
+            <button type="button" id="close-feedback-form">Close</button>
+        </form>
+    </div>
+
+    <div id="timer">30:00</div>
+
+    <script src="interview.js"></script>
+</body>
+
+</html>
